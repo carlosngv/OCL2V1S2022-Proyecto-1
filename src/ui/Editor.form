@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ui.Editor">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="4" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="20" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-1576705"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <scrollpane id="afb6d" binding="outputPane">
+        <constraints>
+          <grid row="1" column="3" row-span="2" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="300" height="450"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-3487030"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="f351e" class="javax.swing.JTextPane" binding="output">
+            <constraints/>
+            <properties>
+              <background color="-16777216"/>
+              <disabledTextColor color="-3487030"/>
+              <doubleBuffered value="false"/>
+              <foreground color="-1576705"/>
+              <inheritsPopupMenu value="false"/>
+              <margin top="10" left="10" bottom="10" right="10"/>
+              <opaque value="true"/>
+              <selectedTextColor color="-3487030"/>
+              <selectionColor color="-3487030"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <scrollpane id="6e687" binding="editorPane">
+        <constraints>
+          <grid row="1" column="0" row-span="2" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="1" use-parent-layout="false">
+            <preferred-size width="300" height="450"/>
+          </grid>
+        </constraints>
+        <properties>
+          <autoscrolls value="false"/>
+          <background color="-3487030"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="62267" class="javax.swing.JTextArea" binding="editor">
+            <constraints/>
+            <properties>
+              <background color="-3487030"/>
+              <margin top="10" left="10" bottom="10" right="10"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="c7b86" class="javax.swing.JLabel" binding="editorLbl">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1576705"/>
+          <text value="Editor"/>
+        </properties>
+      </component>
+      <component id="7cd46" class="javax.swing.JLabel" binding="outputLbl">
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1576705"/>
+          <text value="Output"/>
+        </properties>
+      </component>
+      <component id="28e66" class="javax.swing.JButton" binding="parseButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="300" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Parse"/>
+        </properties>
+      </component>
+      <component id="3903b" class="javax.swing.JButton" binding="translateButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="300" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Translate"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
